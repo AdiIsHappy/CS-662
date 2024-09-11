@@ -1,7 +1,7 @@
 # Q1
 
 ## Bullet With Particles Explosion
-
+   
 ### Setup
 Setup is done as asked in the question.
    - walls and floors are added with appropiate materials.
