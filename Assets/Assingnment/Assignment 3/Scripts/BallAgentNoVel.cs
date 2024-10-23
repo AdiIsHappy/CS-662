@@ -32,7 +32,7 @@ public class BallAgentNoVel : Agent
         if (transform.localPosition.y < -0.5f)
         {
             _rb.angularVelocity = Vector3.zero;
-            _rb.velocity = Vector3.zero;
+            _rb.linearVelocity = Vector3.zero;
             transform.localPosition = new Vector3( 0, 0f, 0);
         }
 

@@ -31,7 +31,7 @@ public class BallAgent : Agent
         if (transform.localPosition.y < -0.5f)
         {
             _rb.angularVelocity = Vector3.zero;
-            _rb.velocity = Vector3.zero;
+            _rb.linearVelocity = Vector3.zero;
             transform.localPosition = new Vector3( 0, 0f, 0);
         }
 
@@ -44,8 +44,8 @@ public class BallAgent : Agent
     {
         sensor.AddObservation(target.localPosition);
         sensor.AddObservation(transform.localPosition);
-        sensor.AddObservation(_rb.velocity.x);
-        sensor.AddObservation(_rb.velocity.z);
+        sensor.AddObservation(_rb.linearVelocity.x);
+        sensor.AddObservation(_rb.linearVelocity.z);
     }
 
     public override void OnActionReceived(ActionBuffers actions)
